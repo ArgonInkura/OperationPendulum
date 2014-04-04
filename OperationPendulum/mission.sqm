@@ -1,0 +1,693 @@
+version=12;
+class Mission
+{
+	addOns[]=
+	{
+		"A3_Characters_F_BLUFOR",
+		"a3_map_altis",
+		"A3_Weapons_F_Ammoboxes",
+		"a3_weapons_f_beta_ammoboxes",
+		"A3_Structures_F_Mil_BagBunker",
+		"A3_Structures_F_Mil_Flags",
+		"A3_Structures_F_Civ_Camping",
+		"A3_Structures_F_Training"
+	};
+	addOnsAuto[]=
+	{
+		"A3_Characters_F_BLUFOR",
+		"A3_Weapons_F_Ammoboxes",
+		"a3_weapons_f_beta_ammoboxes",
+		"A3_Structures_F_Mil_BagBunker",
+		"A3_Structures_F_Mil_Flags",
+		"A3_Structures_F_Civ_Camping",
+		"A3_Structures_F_Training",
+		"a3_map_altis"
+	};
+	randomSeed=2730687;
+	class Intel
+	{
+		timeOfChanges=1800.0002;
+		startWeather=0.30000001;
+		startWind=0.1;
+		startWaves=0.1;
+		forecastWeather=0.30000001;
+		forecastWind=0.1;
+		forecastWaves=0.1;
+		forecastLightnings=0.1;
+		year=2035;
+		month=6;
+		day=24;
+		hour=12;
+		minute=0;
+		startFogDecay=0.013;
+		forecastFogDecay=0.013;
+	};
+	class Groups
+	{
+		items=1;
+		class Item0
+		{
+			side="WEST";
+			class Vehicles
+			{
+				items=10;
+				class Item0
+				{
+					position[]={14617.279,17.91,16765.938};
+					azimut=51.9058;
+					special="NONE";
+					id=0;
+					side="WEST";
+					vehicle="B_Soldier_F";
+					player="PLAY CDG";
+					skill=0.60000002;
+					text="Alpha2";
+					init="this setgroupID [""Alpha""];";
+					description="Alpha Squadmitglied";
+				};
+				class Item1
+				{
+					position[]={14624.181,17.91,16764.529};
+					azimut=-137.495;
+					special="NONE";
+					id=1;
+					side="WEST";
+					vehicle="B_Soldier_F";
+					player="PLAYER COMMANDER";
+					leader=1;
+					rank="SERGEANT";
+					skill=0.60000002;
+					text="Alpha1";
+					init="this setgroupID [""Alpha""];";
+					description="Alpha Teamleiter";
+				};
+				class Item2
+				{
+					position[]={14618.654,17.91,16764.771};
+					azimut=51.9058;
+					special="NONE";
+					id=2;
+					side="WEST";
+					vehicle="B_Soldier_F";
+					player="PLAY CDG";
+					skill=0.60000002;
+					text="Alpha3";
+					init="this setgroupID [""Alpha""];";
+					description="Alpha Squadmitglied";
+				};
+				class Item3
+				{
+					position[]={14619.87,17.91,16763.654};
+					azimut=51.9058;
+					special="NONE";
+					id=3;
+					side="WEST";
+					vehicle="B_Soldier_F";
+					player="PLAY CDG";
+					skill=0.60000002;
+					text="Alpha4";
+					init="this setgroupID [""Alpha""];";
+					description="Alpha Squadmitglied";
+				};
+				class Item4
+				{
+					position[]={14620.969,17.91,16762.443};
+					azimut=51.9058;
+					special="NONE";
+					id=4;
+					side="WEST";
+					vehicle="B_Soldier_F";
+					player="PLAY CDG";
+					skill=0.60000002;
+					text="Alpha5";
+					init="this setgroupID [""Alpha""];";
+					description="Alpha Squadmitglied";
+				};
+				class Item5
+				{
+					position[]={14622.146,17.91,16761.471};
+					azimut=51.9058;
+					special="NONE";
+					id=5;
+					side="WEST";
+					vehicle="B_Soldier_F";
+					player="PLAY CDG";
+					skill=0.60000002;
+					text="Alpha6";
+					init="this setgroupID [""Alpha""];";
+					description="Alpha Squadmitglied";
+				};
+				class Item6
+				{
+					position[]={14622.883,17.91,16760.854};
+					azimut=51.9058;
+					special="NONE";
+					id=6;
+					side="WEST";
+					vehicle="B_Soldier_F";
+					player="PLAY CDG";
+					skill=0.60000002;
+					text="Alpha7";
+					init="this setgroupID [""Alpha""];";
+					description="Alpha Squadmitglied";
+				};
+				class Item7
+				{
+					position[]={14623.54,17.91,16760.074};
+					azimut=51.9058;
+					special="NONE";
+					id=7;
+					side="WEST";
+					vehicle="B_Soldier_F";
+					player="PLAY CDG";
+					skill=0.60000002;
+					text="Alpha8";
+					init="this setgroupID [""Alpha""];";
+					description="Alpha Squadmitglied";
+				};
+				class Item8
+				{
+					position[]={14624.475,17.91,16759.297};
+					azimut=51.9058;
+					special="NONE";
+					id=8;
+					side="WEST";
+					vehicle="B_Soldier_F";
+					player="PLAY CDG";
+					skill=0.60000002;
+					text="Alpha9";
+					init="this setgroupID [""Alpha""];";
+					description="Alpha Squadmitglied";
+				};
+				class Item9
+				{
+					position[]={14625.366,17.91,16758.602};
+					azimut=51.9058;
+					special="NONE";
+					id=9;
+					side="WEST";
+					vehicle="B_Soldier_F";
+					player="PLAY CDG";
+					skill=0.60000002;
+					text="Alpha10";
+					init="this setgroupID [""Alpha""];";
+					description="Alpha Squadmitglied";
+				};
+			};
+		};
+	};
+	class Vehicles
+	{
+		items=36;
+		class Item0
+		{
+			position[]={14619.021,17.91,16772.479};
+			azimut=-49.6409;
+			special="NONE";
+			id=10;
+			side="EMPTY";
+			vehicle="B_supplyCrate_F";
+			skill=0.60000002;
+			text="ammobox";
+			init="this addAction[""<t color='#ff1111'>Virtual Ammobox</t>"", ""VAS\open.sqf""];";
+			description="Alpha Teamleiter";
+		};
+		class Item1
+		{
+			position[]={14613.359,17.91,16761.463};
+			azimut=-314.94937;
+			special="NONE";
+			id=11;
+			side="EMPTY";
+			vehicle="Land_BagBunker_Large_F";
+			skill=0.60000002;
+			description="Alpha Teamleiter";
+		};
+		class Item2
+		{
+			position[]={14635.191,17.91,16783.135};
+			azimut=-495.70493;
+			special="NONE";
+			id=12;
+			side="EMPTY";
+			vehicle="Land_BagBunker_Large_F";
+			skill=0.60000002;
+			description="Alpha Teamleiter";
+		};
+		class Item3
+		{
+			position[]={14623.752,17.91,16777.402};
+			azimut=-49.6409;
+			special="NONE";
+			id=13;
+			side="EMPTY";
+			vehicle="B_supplyCrate_F";
+			skill=0.60000002;
+			text="ammobox2";
+			init="this addAction[""<t color='#ff1111'>Virtual Ammobox</t>"", ""VAS\open.sqf""];";
+			description="Alpha Teamleiter";
+		};
+		class Item4
+		{
+			position[]={14621.823,17.91,16775.014};
+			azimut=-137.495;
+			special="NONE";
+			id=14;
+			side="EMPTY";
+			vehicle="FlagPole_F";
+			skill=0.60000002;
+			description="Alpha Teamleiter";
+		};
+		class Item5
+		{
+			position[]={14625.393,17.91,16779.164};
+			azimut=-137.495;
+			special="NONE";
+			id=15;
+			side="EMPTY";
+			vehicle="FlagPole_F";
+			skill=0.60000002;
+			description="Alpha Teamleiter";
+		};
+		class Item6
+		{
+			position[]={14617.285,17.91,16770.318};
+			azimut=-137.495;
+			special="NONE";
+			id=16;
+			side="EMPTY";
+			vehicle="FlagPole_F";
+			skill=0.60000002;
+			description="Alpha Teamleiter";
+		};
+		class Item7
+		{
+			position[]={14628.961,17.91,16778.734};
+			azimut=-175.61794;
+			special="NONE";
+			id=17;
+			side="EMPTY";
+			vehicle="Land_CampingChair_V1_F";
+			skill=0.60000002;
+			description="Alpha Teamleiter";
+		};
+		class Item8
+		{
+			position[]={14630.668,17.91,16777.26};
+			azimut=-279.44754;
+			special="NONE";
+			id=18;
+			side="EMPTY";
+			vehicle="Land_CampingChair_V1_F";
+			skill=0.60000002;
+			description="Alpha Teamleiter";
+		};
+		class Item9
+		{
+			position[]={14629,17.91,16775.904};
+			azimut=-721.97345;
+			special="NONE";
+			id=19;
+			side="EMPTY";
+			vehicle="Land_CampingChair_V1_F";
+			skill=0.60000002;
+			description="Alpha Teamleiter";
+		};
+		class Item10
+		{
+			position[]={14626.749,17.91,16776.561};
+			azimut=-483.27353;
+			special="NONE";
+			id=20;
+			side="EMPTY";
+			vehicle="Land_CampingChair_V1_F";
+			skill=0.60000002;
+			description="Alpha Teamleiter";
+		};
+		class Item11
+		{
+			position[]={14628.456,17.91,16781.99};
+			azimut=-353.41592;
+			special="NONE";
+			id=21;
+			side="EMPTY";
+			vehicle="Land_CampingChair_V1_F";
+			skill=0.60000002;
+			description="Alpha Teamleiter";
+		};
+		class Item12
+		{
+			position[]={14628.646,17.91,16777.475};
+			azimut=-182.48059;
+			special="NONE";
+			id=22;
+			side="EMPTY";
+			vehicle="Land_CampingTable_F";
+			skill=0.60000002;
+			description="Alpha Teamleiter";
+		};
+		class Item13
+		{
+			position[]={14589.888,17.91,16711.006};
+			azimut=-137.495;
+			special="NONE";
+			id=23;
+			side="EMPTY";
+			vehicle="TargetP_Inf3_F";
+			skill=0.60000002;
+			description="Alpha Teamleiter";
+		};
+		class Item14
+		{
+			position[]={14588.025,17.91,16711.199};
+			azimut=-137.495;
+			special="NONE";
+			id=24;
+			side="EMPTY";
+			vehicle="TargetP_Inf3_F";
+			skill=0.60000002;
+			description="Alpha Teamleiter";
+		};
+		class Item15
+		{
+			position[]={14586.164,17.91,16711.162};
+			azimut=-137.495;
+			special="NONE";
+			id=25;
+			side="EMPTY";
+			vehicle="TargetP_Inf3_F";
+			skill=0.60000002;
+			description="Alpha Teamleiter";
+		};
+		class Item16
+		{
+			position[]={14575.229,17.91,16702.166};
+			azimut=-137.495;
+			special="NONE";
+			id=26;
+			side="EMPTY";
+			vehicle="TargetP_Inf3_F";
+			skill=0.60000002;
+			description="Alpha Teamleiter";
+		};
+		class Item17
+		{
+			position[]={14574.142,17.91,16702.824};
+			azimut=-137.495;
+			special="NONE";
+			id=27;
+			side="EMPTY";
+			vehicle="TargetP_Inf3_F";
+			skill=0.60000002;
+			description="Alpha Teamleiter";
+		};
+		class Item18
+		{
+			position[]={14572.939,17.91,16703.443};
+			azimut=-137.495;
+			special="NONE";
+			id=28;
+			side="EMPTY";
+			vehicle="TargetP_Inf3_F";
+			skill=0.60000002;
+			description="Alpha Teamleiter";
+		};
+		class Item19
+		{
+			position[]={14559.249,17.91,16696.506};
+			azimut=-137.495;
+			special="NONE";
+			id=29;
+			side="EMPTY";
+			vehicle="TargetP_Inf3_F";
+			skill=0.60000002;
+			description="Alpha Teamleiter";
+		};
+		class Item20
+		{
+			position[]={14558.318,17.91,16697.127};
+			azimut=-137.495;
+			special="NONE";
+			id=30;
+			side="EMPTY";
+			vehicle="TargetP_Inf3_F";
+			skill=0.60000002;
+			description="Alpha Teamleiter";
+		};
+		class Item21
+		{
+			position[]={14557.193,17.91,16697.473};
+			azimut=-137.495;
+			special="NONE";
+			id=31;
+			side="EMPTY";
+			vehicle="TargetP_Inf3_F";
+			skill=0.60000002;
+			description="Alpha Teamleiter";
+		};
+		class Item22
+		{
+			position[]={14533.562,17.928988,16682.197};
+			azimut=-137.495;
+			special="NONE";
+			id=32;
+			side="EMPTY";
+			vehicle="TargetP_Inf3_F";
+			skill=0.60000002;
+			description="Alpha Teamleiter";
+		};
+		class Item23
+		{
+			position[]={14532.547,17.92935,16682.939};
+			azimut=-137.495;
+			special="NONE";
+			id=33;
+			side="EMPTY";
+			vehicle="TargetP_Inf3_F";
+			skill=0.60000002;
+			description="Alpha Teamleiter";
+		};
+		class Item24
+		{
+			position[]={14531.383,17.93,16683.482};
+			azimut=-137.495;
+			special="NONE";
+			id=34;
+			side="EMPTY";
+			vehicle="TargetP_Inf3_F";
+			skill=0.60000002;
+			description="Alpha Teamleiter";
+		};
+		class Item25
+		{
+			position[]={14504.194,17.929811,16670.291};
+			azimut=-137.495;
+			special="NONE";
+			id=35;
+			side="EMPTY";
+			vehicle="TargetP_Inf3_F";
+			skill=0.60000002;
+			description="Alpha Teamleiter";
+		};
+		class Item26
+		{
+			position[]={14502.525,17.929913,16670.834};
+			azimut=-137.495;
+			special="NONE";
+			id=36;
+			side="EMPTY";
+			vehicle="TargetP_Inf3_F";
+			skill=0.60000002;
+			description="Alpha Teamleiter";
+		};
+		class Item27
+		{
+			position[]={14500.664,17.931463,16671.262};
+			azimut=-137.495;
+			special="NONE";
+			id=37;
+			side="EMPTY";
+			vehicle="TargetP_Inf3_F";
+			skill=0.60000002;
+			description="Alpha Teamleiter";
+		};
+		class Item28
+		{
+			position[]={14498.652,17.935421,16671.438};
+			azimut=-137.495;
+			special="NONE";
+			id=38;
+			side="EMPTY";
+			vehicle="TargetP_Inf2_Acc2_F";
+			skill=0.60000002;
+			description="Alpha Teamleiter";
+		};
+		class Item29
+		{
+			position[]={14593.634,17.91,16726.484};
+			azimut=-137.495;
+			special="NONE";
+			id=39;
+			side="EMPTY";
+			vehicle="ShootingPos_F";
+			skill=0.60000002;
+			description="Alpha Teamleiter";
+		};
+		class Item30
+		{
+			position[]={14589.833,17.91,16729.934};
+			azimut=-137.495;
+			special="NONE";
+			id=40;
+			side="EMPTY";
+			vehicle="ShootingPos_F";
+			skill=0.60000002;
+			description="Alpha Teamleiter";
+		};
+		class Item31
+		{
+			position[]={14571.757,17.91,16726.367};
+			azimut=-137.495;
+			special="NONE";
+			id=41;
+			side="EMPTY";
+			vehicle="ShootingPos_F";
+			skill=0.60000002;
+			description="Alpha Teamleiter";
+		};
+		class Item32
+		{
+			position[]={14576.102,17.91,16722.453};
+			azimut=-137.495;
+			special="NONE";
+			id=42;
+			side="EMPTY";
+			vehicle="ShootingPos_F";
+			skill=0.60000002;
+			description="Alpha Teamleiter";
+		};
+		class Item33
+		{
+			position[]={14498.415,17.930658,16660.211};
+			azimut=-137.495;
+			special="NONE";
+			id=43;
+			side="EMPTY";
+			vehicle="Dirthump_2_F";
+			skill=0.60000002;
+			description="Alpha Teamleiter";
+		};
+		class Item34
+		{
+			position[]={14516.059,17.943848,16644.242};
+			azimut=-137.495;
+			special="NONE";
+			id=44;
+			side="EMPTY";
+			vehicle="Dirthump_2_F";
+			skill=0.60000002;
+			description="Alpha Teamleiter";
+		};
+		class Item35
+		{
+			position[]={14527.114,17.910131,16642.531};
+			azimut=-49.6409;
+			special="NONE";
+			id=45;
+			side="EMPTY";
+			vehicle="Target_Rail_End_F";
+			skill=0.60000002;
+			description="Alpha Teamleiter";
+		};
+	};
+};
+class Intro
+{
+	addOns[]=
+	{
+		"a3_map_altis"
+	};
+	addOnsAuto[]=
+	{
+		"a3_map_altis"
+	};
+	randomSeed=14011323;
+	class Intel
+	{
+		timeOfChanges=1800.0002;
+		startWeather=0.30000001;
+		startWind=0.1;
+		startWaves=0.1;
+		forecastWeather=0.30000001;
+		forecastWind=0.1;
+		forecastWaves=0.1;
+		forecastLightnings=0.1;
+		year=2035;
+		month=6;
+		day=24;
+		hour=12;
+		minute=0;
+		startFogDecay=0.013;
+		forecastFogDecay=0.013;
+	};
+};
+class OutroWin
+{
+	addOns[]=
+	{
+		"a3_map_altis"
+	};
+	addOnsAuto[]=
+	{
+		"a3_map_altis"
+	};
+	randomSeed=15555160;
+	class Intel
+	{
+		timeOfChanges=1800.0002;
+		startWeather=0.30000001;
+		startWind=0.1;
+		startWaves=0.1;
+		forecastWeather=0.30000001;
+		forecastWind=0.1;
+		forecastWaves=0.1;
+		forecastLightnings=0.1;
+		year=2035;
+		month=6;
+		day=24;
+		hour=12;
+		minute=0;
+		startFogDecay=0.013;
+		forecastFogDecay=0.013;
+	};
+};
+class OutroLoose
+{
+	addOns[]=
+	{
+		"a3_map_altis"
+	};
+	addOnsAuto[]=
+	{
+		"a3_map_altis"
+	};
+	randomSeed=14302173;
+	class Intel
+	{
+		timeOfChanges=1800.0002;
+		startWeather=0.30000001;
+		startWind=0.1;
+		startWaves=0.1;
+		forecastWeather=0.30000001;
+		forecastWind=0.1;
+		forecastWaves=0.1;
+		forecastLightnings=0.1;
+		year=2035;
+		month=6;
+		day=24;
+		hour=12;
+		minute=0;
+		startFogDecay=0.013;
+		forecastFogDecay=0.013;
+	};
+};
