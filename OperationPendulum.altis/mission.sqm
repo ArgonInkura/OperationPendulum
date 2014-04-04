@@ -256,6 +256,7 @@ class Mission
 			side="EMPTY";
 			vehicle="FlagPole_F";
 			skill=0.60000002;
+			init="this addAction [""Mission anfordern!"",""functions\requestMission.sqf""];";
 			description="Alpha Teamleiter";
 		};
 		class Item5
