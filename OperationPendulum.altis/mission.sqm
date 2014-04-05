@@ -10,7 +10,8 @@ class Mission
 		"A3_Structures_F_Mil_BagBunker",
 		"A3_Structures_F_Mil_Flags",
 		"A3_Structures_F_Civ_Camping",
-		"A3_Structures_F_Training"
+		"A3_Structures_F_Training",
+		"A3_Structures_F_Mil_Helipads"
 	};
 	addOnsAuto[]=
 	{
@@ -21,6 +22,7 @@ class Mission
 		"A3_Structures_F_Mil_Flags",
 		"A3_Structures_F_Civ_Camping",
 		"A3_Structures_F_Training",
+		"A3_Structures_F_Mil_Helipads",
 		"a3_map_altis"
 	};
 	randomSeed=2730687;
@@ -198,7 +200,7 @@ class Mission
 	};
 	class Vehicles
 	{
-		items=36;
+		items=39;
 		class Item0
 		{
 			position[]={14619.021,17.91,16772.479};
@@ -256,7 +258,7 @@ class Mission
 			side="EMPTY";
 			vehicle="FlagPole_F";
 			skill=0.60000002;
-			init="this addAction [""Mission anfordern!"",""functions\requestMission.sqf""];";
+			init="this addAction [""Mission anfordern!"",""functions\requestMission.sqf""]; this addAction [""Bestelle UH-80 Ghost Hawk($90'000)"", ""functions\buyHeli.sqf"",0];this addAction [""Bestelle AH-99 Blackfoot($150'000)"", ""functions\buyHeli.sqf"",1];this addAction [""Bestelle MH-9 Hummingbird($40'000)"", ""functions\buyHeli.sqf"",2];";
 			description="Alpha Teamleiter";
 		};
 		class Item5
@@ -599,6 +601,36 @@ class Mission
 			vehicle="Target_Rail_End_F";
 			skill=0.60000002;
 			description="Alpha Teamleiter";
+		};
+		class Item36
+		{
+			position[]={14626.594,17.91,16731.057};
+			azimut=-223.677;
+			id=46;
+			side="EMPTY";
+			vehicle="Land_HelipadSquare_F";
+			skill=0.60000002;
+			text="heliPad3";
+		};
+		class Item37
+		{
+			position[]={14639.858,17.91,16746.83};
+			azimut=-403.686;
+			id=47;
+			side="EMPTY";
+			vehicle="Land_HelipadSquare_F";
+			skill=0.60000002;
+			text="heliPad2";
+		};
+		class Item38
+		{
+			position[]={14654.917,17.91,16761.885};
+			azimut=-223.022;
+			id=48;
+			side="EMPTY";
+			vehicle="Land_HelipadSquare_F";
+			skill=0.60000002;
+			text="heliPad1";
 		};
 	};
 };
