@@ -658,6 +658,7 @@ class Mission
 			side="EMPTY";
 			vehicle="B_MRAP_01_F";
 			skill=0.60000002;
+			init="0 = [this,10] execVM ""functions\vehicle_respawn.sqf"";";
 		};
 		class Item41
 		{
@@ -667,6 +668,7 @@ class Mission
 			side="EMPTY";
 			vehicle="B_MRAP_01_F";
 			skill=0.60000002;
+			init="0 = [this,10] execVM ""functions\vehicle_respawn.sqf"";";
 		};
 		class Item42
 		{
@@ -676,6 +678,7 @@ class Mission
 			side="EMPTY";
 			vehicle="B_MRAP_01_F";
 			skill=0.60000002;
+			init="0 = [this,10] execVM ""functions\vehicle_respawn.sqf"";";
 		};
 		class Item43
 		{
@@ -746,7 +749,7 @@ class Mission
 	};
 	class Markers
 	{
-		items=5;
+		items=8;
 		class Item0
 		{
 			position[]={7243.0073,108.31886,16360.014};
@@ -791,6 +794,29 @@ class Mission
 			type="Empty";
 			a=500;
 			b=500;
+		};
+		class Item5
+		{
+			position[]={14631.775,17.91,16767.234};
+			name="respawn_west";
+			type="Empty";
+			colorName="ColorGrey";
+		};
+		class Item6
+		{
+			position[]={14663.65,17.91,16782.416};
+			name="vehicleSpawnMarker";
+			text="Vehicle Spawner";
+			type="mil_marker";
+			colorName="ColorGreen";
+		};
+		class Item7
+		{
+			position[]={14635.561,17.91,16752.346};
+			name="helicopterSpawnerMarker";
+			text="Helicopter Spawner";
+			type="mil_marker";
+			colorName="ColorGreen";
 		};
 	};
 };
