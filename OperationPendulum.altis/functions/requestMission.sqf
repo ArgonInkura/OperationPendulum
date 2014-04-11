@@ -7,6 +7,6 @@ if(task != 0) then {
     //sleep floor random 150;
     ["Deinem Squad wurde eine Mission zugeteilt!"] call oppSideChatAllAll;
     
-    execVM "missions\secure\1.sqf";
+    execVM "missions\sabotage\1.sqf";
     
 };

@@ -1,1 +1,1 @@
-this addaction ["Show Status","functions\showStatus.sqf",1,0,true,false,"","player ==_target"];  
+(_this select 1) addaction ["Show Status","functions\showStatus.sqf",1,0,true,false,"","player ==_target"];  

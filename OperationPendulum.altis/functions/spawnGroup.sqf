@@ -8,7 +8,7 @@ _ups = _this select 4;
 
 
 if(_ups)then{
-    _init = "nul = [this,'Marker','showmarker'] execVM 'UPS\ups.sqf'";
+    _init = "nul = [this,'Marker','showmarker','random'] execVM 'UPS\ups.sqf'";
 }else{
     _init ="";
 };

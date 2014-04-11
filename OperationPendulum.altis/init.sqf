@@ -17,9 +17,7 @@ if(isServer) then {
     padStatus =[0,0,0];
     spotStatus =[0,0];
     publicVariable "money"; publicVariable "task"; publicVariable "lastTask",publicVariable "lastTask";
-    
-    
-   
+      
 };
  // Load IED script 
  [] spawn {call compile preprocessFileLineNumbers "EPD\Ied_Init.sqf";};
