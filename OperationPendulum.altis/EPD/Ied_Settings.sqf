@@ -7,7 +7,7 @@ itemsRequiredToDisarm = ["ToolKit"];   //"MineDetector" or "ToolKit" for example
 betterDisarmers = ["B_soldier_exp_F", "B_engineer_F", "B_diver_exp_F", "B_recon_exp_F"]; // people who are better at disarming
 
 baseDisarmChance = 75; //how well everybody can disarm
-bonusDisarmChance = 20; //increase that the "betterDisarmers" get
+bonusDisarmChance = 24; //increase that the "betterDisarmers" get
 
 secondaryChance = 50; //Chance that a secondary IED will spawn.
 

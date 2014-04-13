@@ -14,8 +14,7 @@ class Mission
 		"A3_Structures_F_Mil_Helipads",
 		"A3_Structures_F_Civ_InfoBoards",
 		"A3_Soft_F_MRAP_01",
-		"A3_Structures_F_Walls",
-		"A3_Structures_F_Mil_Shelters"
+		"A3_Structures_F_Walls"
 	};
 	addOnsAuto[]=
 	{
@@ -29,7 +28,6 @@ class Mission
 		"A3_Structures_F_Mil_Helipads",
 		"A3_Structures_F_Civ_InfoBoards",
 		"A3_Soft_F_MRAP_01",
-		"A3_Structures_F_Mil_Shelters",
 		"A3_Structures_F_Walls",
 		"a3_map_altis"
 	};
@@ -208,7 +206,7 @@ class Mission
 	};
 	class Vehicles
 	{
-		items=62;
+		items=60;
 		class Item0
 		{
 			position[]={14619.021,17.91,16772.479};
@@ -648,7 +646,7 @@ class Mission
 			side="EMPTY";
 			vehicle="Land_InfoStand_V1_F";
 			skill=0.60000002;
-			init="this addAction [""Bestelle UH-80 Ghost Hawk($90'000)"", ""functions\buyHeli.sqf"",0];this addAction [""Bestelle AH-99 Blackfoot($150'000)"", ""functions\buyHeli.sqf"",1];this addAction [""Bestelle MH-9 Hummingbird($40'000)"", ""functions\buyHeli.sqf"",2];";
+			init="this addAction [""Bestelle UH-80 Ghost Hawk($90'000)"", ""functions\buyHeli.sqf"",0];this addAction [""Bestelle AH-99 Blackfoot($150'000)"", ""functions\buyHeli.sqf"",1];this addAction [""Bestelle MH-9 Hummingbird($40'000)"", ""functions\buyHeli.sqf"",2]; this enableSimulation false; this allowDamage false;";
 		};
 		class Item40
 		{
@@ -682,56 +680,56 @@ class Mission
 		};
 		class Item43
 		{
-			position[]={14677.626,17.91,16809.76};
-			azimut=53.5168;
-			id=53;
-			side="EMPTY";
-			vehicle="CamoNet_BLUFOR_big_F";
-			skill=0.60000002;
-		};
-		class Item44
-		{
-			position[]={14696.127,17.91,16800.469};
-			azimut=103.538;
-			id=54;
-			side="EMPTY";
-			vehicle="CamoNet_BLUFOR_big_F";
-			skill=0.60000002;
-		};
-		class Item45
-		{
 			position[]={14665.785,17.91,16785.801};
-			azimut=34.658859;
-			id=55;
+			azimut=34.658901;
+			id=53;
 			side="EMPTY";
 			vehicle="Land_InfoStand_V1_F";
 			skill=0.60000002;
-			init="this addAction [""Bestelle IFV-6a Cheetah($75'000)"", ""functions\buyVehicle.sqf"",0];  this addAction [""Bestelle IFV-6c Panther($75'000)"", ""functions\buyVehicle.sqf"",1];  this addAction [""Bestelle AMV-7 Marshall($75'000)"", ""functions\buyVehicle.sqf"",2];  this addAction [""Bestelle M4 Scorcher($150'000)"", ""functions\buyVehicle.sqf"",3];  this addAction [""Bestelle M2A1 Slammer($125'000)"", ""functions\buyVehicle.sqf"",4];  this addAction [""Bestelle Sandstorm MLRS($200'000)"", ""functions\buyVehicle.sqf"",5]; this addAction [""HEMTT Ammo($30'000)"", ""functions\buyVehicle.sqf"",6]; this addAction [""HEMTT Fuel ($30'000)"", ""functions\buyVehicle.sqf"",7];  this addAction [""HEMTT Repair ($30'000)"", ""functions\buyVehicle.sqf"",8];";
+			init="this addAction [""Bestelle IFV-6a Cheetah($75'000)"", ""functions\buyVehicle.sqf"",0];  this addAction [""Bestelle IFV-6c Panther($75'000)"", ""functions\buyVehicle.sqf"",1];  this addAction [""Bestelle AMV-7 Marshall($75'000)"", ""functions\buyVehicle.sqf"",2];  this addAction [""Bestelle M4 Scorcher($150'000)"", ""functions\buyVehicle.sqf"",3];  this addAction [""Bestelle M2A1 Slammer($125'000)"", ""functions\buyVehicle.sqf"",4];  this addAction [""Bestelle Sandstorm MLRS($200'000)"", ""functions\buyVehicle.sqf"",5]; this addAction [""HEMTT Ammo($30'000)"", ""functions\buyVehicle.sqf"",6]; this addAction [""HEMTT Fuel ($30'000)"", ""functions\buyVehicle.sqf"",7];  this addAction [""HEMTT Repair ($30'000)"", ""functions\buyVehicle.sqf"",8]; this enableSimulation false; this allowDamage false;";
 		};
-		class Item46
+		class Item44
 		{
 			position[]={14664.072,17.91,16796.023};
 			azimut=-51.219852;
-			id=56;
+			id=54;
 			side="EMPTY";
 			vehicle="Land_HelipadRescue_F";
 			skill=0.60000002;
 			text="vehicleSpawn1";
 		};
-		class Item47
+		class Item45
 		{
 			position[]={14675.568,17.91,16786.438};
 			azimut=-230.41429;
-			id=57;
+			id=55;
 			side="EMPTY";
 			vehicle="Land_HelipadRescue_F";
 			skill=0.60000002;
 			text="vehicleSpawn2";
 		};
-		class Item48
+		class Item46
 		{
 			position[]={14669.111,17.91,16790.211};
 			azimut=492.99036;
+			id=56;
+			side="EMPTY";
+			vehicle="Land_CncWall4_F";
+			skill=0.60000002;
+		};
+		class Item47
+		{
+			position[]={14672.329,17.91,16794.445};
+			azimut=302.19016;
+			id=57;
+			side="EMPTY";
+			vehicle="Land_CncWall4_F";
+			skill=0.60000002;
+		};
+		class Item48
+		{
+			position[]={14654.798,17.91,16796.15};
+			azimut=302.19016;
 			id=58;
 			side="EMPTY";
 			vehicle="Land_CncWall4_F";
@@ -739,7 +737,7 @@ class Mission
 		};
 		class Item49
 		{
-			position[]={14672.329,17.91,16794.445};
+			position[]={14657.642,17.91,16800.686};
 			azimut=302.19016;
 			id=59;
 			side="EMPTY";
@@ -748,8 +746,8 @@ class Mission
 		};
 		class Item50
 		{
-			position[]={14654.798,17.91,16796.15};
-			azimut=302.19016;
+			position[]={14660.992,17.91,16805.02};
+			azimut=314.56705;
 			id=60;
 			side="EMPTY";
 			vehicle="Land_CncWall4_F";
@@ -757,7 +755,7 @@ class Mission
 		};
 		class Item51
 		{
-			position[]={14657.642,17.91,16800.686};
+			position[]={14684.744,17.91,16784.098};
 			azimut=302.19016;
 			id=61;
 			side="EMPTY";
@@ -766,8 +764,8 @@ class Mission
 		};
 		class Item52
 		{
-			position[]={14660.992,17.91,16805.02};
-			azimut=314.56705;
+			position[]={14681.741,17.91,16779.477};
+			azimut=302.19016;
 			id=62;
 			side="EMPTY";
 			vehicle="Land_CncWall4_F";
@@ -775,7 +773,7 @@ class Mission
 		};
 		class Item53
 		{
-			position[]={14684.744,17.91,16784.098};
+			position[]={14678.605,17.91,16774.645};
 			azimut=302.19016;
 			id=63;
 			side="EMPTY";
@@ -784,8 +782,8 @@ class Mission
 		};
 		class Item54
 		{
-			position[]={14681.741,17.91,16779.477};
-			azimut=302.19016;
+			position[]={14685.029,17.91,16788.063};
+			azimut=37.414017;
 			id=64;
 			side="EMPTY";
 			vehicle="Land_CncWall4_F";
@@ -793,8 +791,8 @@ class Mission
 		};
 		class Item55
 		{
-			position[]={14678.605,17.91,16774.645};
-			azimut=302.19016;
+			position[]={14664.994,17.91,16804.586};
+			azimut=217.91469;
 			id=65;
 			side="EMPTY";
 			vehicle="Land_CncWall4_F";
@@ -802,8 +800,8 @@ class Mission
 		};
 		class Item56
 		{
-			position[]={14685.029,17.91,16788.063};
-			azimut=37.414017;
+			position[]={14669.111,17.91,16801.383};
+			azimut=217.91469;
 			id=66;
 			side="EMPTY";
 			vehicle="Land_CncWall4_F";
@@ -811,8 +809,8 @@ class Mission
 		};
 		class Item57
 		{
-			position[]={14664.994,17.91,16804.586};
-			azimut=217.91469;
+			position[]={14673.077,17.91,16798.111};
+			azimut=221.49924;
 			id=67;
 			side="EMPTY";
 			vehicle="Land_CncWall4_F";
@@ -820,8 +818,8 @@ class Mission
 		};
 		class Item58
 		{
-			position[]={14669.111,17.91,16801.383};
-			azimut=217.91469;
+			position[]={14676.982,17.91,16794.684};
+			azimut=221.49924;
 			id=68;
 			side="EMPTY";
 			vehicle="Land_CncWall4_F";
@@ -829,27 +827,9 @@ class Mission
 		};
 		class Item59
 		{
-			position[]={14673.077,17.91,16798.111};
-			azimut=221.49924;
-			id=69;
-			side="EMPTY";
-			vehicle="Land_CncWall4_F";
-			skill=0.60000002;
-		};
-		class Item60
-		{
-			position[]={14676.982,17.91,16794.684};
-			azimut=221.49924;
-			id=70;
-			side="EMPTY";
-			vehicle="Land_CncWall4_F";
-			skill=0.60000002;
-		};
-		class Item61
-		{
 			position[]={14680.843,17.91,16791.309};
 			azimut=221.49924;
-			id=71;
+			id=69;
 			side="EMPTY";
 			vehicle="Land_CncWall4_F";
 			skill=0.60000002;
