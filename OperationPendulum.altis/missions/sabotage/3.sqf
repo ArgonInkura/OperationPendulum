@@ -1,9 +1,9 @@
-// Pyrsos
+// Coast North-East
 private["_enemyCount","_objectives"];
 
 _missionText = "Sprengen Sie alle!";
 
-_markerLoc = [9276,19360];
+_markerLoc = [20165,19978];
 _markerShape = "ELLIPSE";
 _markerColor = "ColorRed";
 _markerBrush = "DiagGrid";
@@ -28,7 +28,6 @@ _car1 = "O_APC_Tracked_02_cannon_F" createVehicle [(_markerLoc select 0) + round
 _car1 lock true;
 _car2 ="O_APC_Tracked_02_cannon_F" createVehicle [(_markerLoc select 0) - round random 75, (_markerLoc select 1) - round random 75]; _objectives = _objectives + [_car2];
 _car2 lock true;
-
 // Gegnerzahl bestimmen
 _enemyCount = {alive _x;} count _hostiles;
 player sideChat format["%2 Gegnerzahl: %1",_enemyCount,_missionText];
@@ -48,7 +47,7 @@ money = money + 25000;
 publicVariable "money";
 task = 0;
 publicVariable "task";
-lastTask = "11";
+lastTask = "13";
 publicVariable "lastTask";
 
 sleep 300;

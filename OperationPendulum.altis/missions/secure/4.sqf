@@ -42,6 +42,10 @@ while {_enemyCount > 0 } do{
 player sideChat "Mission erfolgreich. Dein Team erhält $25'000!";
 money = money + 25000;
 publicVariable "money";
+task = 0;
+publicVariable "task";
+lastTask = "14";
+publicVariable "lastTask";
 
 sleep 300;
 

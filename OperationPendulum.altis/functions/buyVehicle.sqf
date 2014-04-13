@@ -5,7 +5,10 @@ _cars = [
 ["AMV-7 Marshall",75000,"B_APC_Wheeled_01_cannon_F",120],
 ["M4 Scorcher",150000,"B_MBT_01_arty_F",180],
 ["M2A1 Slammer",125000,"B_MBT_01_cannon_F",240],
-["Sandstorm MLRS",200000,"B_MBT_01_mlrs_F",180]
+["Sandstorm MLRS",200000,"B_MBT_01_mlrs_F",180],
+["HEMTT Ammo",30000,"B_Truck_01_ammo_F",25],
+["HEMTT Fuel",30000,"B_Truck_01_fuel_F",25],
+["HEMTT Repair",30000,"B_Truck_01_Repair_F",25]
 ];
 
 _id = _this select 3;
@@ -22,6 +25,7 @@ if(money >= _car select 1) then{
     }else{
         if(count (nearestObjects[vehicleSpawn2,["Armored"],10]) == 0 && (spotStatus select 1)==0)then{
 	        _spot = vehicleSpawn2;
+            _spotID = 1;
 	        spotStatus set [1,1];
    		 }else{
 		       player sideChat "Alle Stellplätze sdind belegt. Bitte stellplatz räumen!";
@@ -37,9 +41,11 @@ if(money >= _car select 1) then{
     sleep (_car select 3);
     
     // Heli Spawnen
-    (_car select 2) createVehicle (_pos);
+    _spawnedCar = (_car select 2) createVehicle (_pos);
+    _spawnedCar setDir 230;
     player sideChat format ["Deine Bestellung ist abgeschlossen. Das Fahrzeug steht bereit!"];
     
+    spotStatus set [_spotID,0];
     //Geld Abziehen
     money = money - (_car select 1);
     publicVariable "money";

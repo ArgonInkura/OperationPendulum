@@ -1,9 +1,9 @@
-// Pyrsos
+// Coast North-West
 private["_enemyCount","_objectives"];
 
-_missionText = "Sprengen Sie alle!";
+_missionText = "Sprengen Sie alle Fahrzeuge!";
 
-_markerLoc = [9276,19360];
+_markerLoc = [8925,23433];
 _markerShape = "ELLIPSE";
 _markerColor = "ColorRed";
 _markerBrush = "DiagGrid";
@@ -48,7 +48,7 @@ money = money + 25000;
 publicVariable "money";
 task = 0;
 publicVariable "task";
-lastTask = "11";
+lastTask = "12";
 publicVariable "lastTask";
 
 sleep 300;
