@@ -31,7 +31,7 @@ _car2 lock true;
 
 // Gegnerzahl bestimmen
 _enemyCount = {alive _x;} count _hostiles;
-player sideChat format["%2 Gegnerzahl: %1",_enemyCount,_missionText];
+[format["%2 Gegnerzahl: %1",_enemyCount,_missionText], player group] call oppsideChatGroupAll;
 
 _objectivesRemaining = {damage _x < 1 ;} count _objectives;
 
@@ -43,7 +43,7 @@ while {_objectivesRemaining > 0 } do{
     sleep 1;
 };
 
-player sideChat "Mission erfolgreich. Dein Team erhält $25'000!";
+["Mission erfolgreich. Dein Team erhält $25'000!", player group] call oppsideChatGroupAll;
 money = money + 25000;
 publicVariable "money";
 task = 0;

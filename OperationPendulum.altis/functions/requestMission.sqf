@@ -2,9 +2,9 @@ _caller = _this select 1;
 if(task != 0) then {
     hint "Du hast bereits eine Mission!";
 }else{
-    ["Dein Squad wurde in Bereitschaft versetzt!"] call oppSideChatAllAll;
+    ["Dein Squad wurde in Bereitschaft versetzt!"] call oppSideChatAll;
     //sleep floor random 150;
-    ["Deinem Squad wurde eine Mission zugeteilt!"] call oppSideChatAllAll;
+    ["Deinem Squad wurde eine Mission zugeteilt!"] call oppSideChatAll;
     
     _missions=[
     [1,2,3,4,5,6], 	// Secure

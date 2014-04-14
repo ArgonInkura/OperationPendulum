@@ -23,7 +23,7 @@ if(isServer) then {
  [] spawn {call compile preprocessFileLineNumbers "EPD\Ied_Init.sqf";};
  
  // Load LoadOut saver
-  [] execVM "functions\keepLoadOut.sqf";
+ [] execVM "functions\keepLoadOut.sqf";
 
 
 //Constants

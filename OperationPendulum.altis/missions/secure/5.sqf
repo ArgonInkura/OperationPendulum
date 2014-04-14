@@ -34,7 +34,7 @@ if(random 1 > 0.75) then {
 };
 
 _enemyCount = {alive _x;} count _hostiles;
-player sideChat format["%2  - Gegnerzahl: %1",_enemyCount,_missionText];
+[format["%2 Gegnerzahl: %1",_enemyCount,_missionText], player group] call oppsideChatGroupAll;
 
 while {_enemyCount > 0 } do{
     player sideChat format["Gegner: %1",_enemyCount];
@@ -42,7 +42,7 @@ while {_enemyCount > 0 } do{
     sleep 1;
 };
 
-player sideChat "Mission erfolgreich. Dein Team erhält $25'000!";
+["Mission erfolgreich. Dein Team erhält $25'000!", player group] call oppsideChatGroupAll;
 money = money + 25000;
 publicVariable "money";
 task = 0;

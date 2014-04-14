@@ -4,7 +4,8 @@
 // <ASCOM version="1">
 // <Prefix>opp</Prefix>
 // <Functions>
-// <Function Name="SideChatAll" Params="text" Ret="false" A="true" C="false" S="false" O="false" OC="false" P="false" />
+// <Function Name="SideChat" Params="text" Ret="false" A="true" C="false" S="false" O="false" OC="false" P="false" />
+// <Function Name="sideChatGroup" Params="text, group" Ret="false" A="true" C="false" S="false" O="false" OC="false" P="false" />
 // </Functions>
 // </ASCOM>
 
@@ -13,24 +14,45 @@ ASCOM_CallID = 0;
 ASCOM_LastCallID = 0;
 ASCOM_LockCallID = 0;
 
-"oppSideChatAllEventArgs" addPublicVariableEventHandler {
+"oppSideChatEventArgs" addPublicVariableEventHandler {
     private ["_array"];
 
     _array = _this select 1;
 
     _array spawn {
         if ((_this select 0 == "A") || (_this select 0 == "C" && !isDedicated)) then {
-            (_this select 1) call oppSideChatAll;
+            (_this select 1) call oppSideChat;
         };
     };
 };
 
-oppSideChatAllAll = {
+oppSideChatAll = {
     if (isNil "_this") then { _this = []; };
-    oppSideChatAllEventArgs = ["A", _this];
-    publicVariable "oppSideChatAllEventArgs";
-    _this call oppSideChatAll;
-    oppSideChatAllEventArgs = [];
+    oppSideChatEventArgs = ["A", _this];
+    publicVariable "oppSideChatEventArgs";
+    _this call oppSideChat;
+    oppSideChatEventArgs = [];
+};
+
+
+"oppsideChatGroupEventArgs" addPublicVariableEventHandler {
+    private ["_array"];
+
+    _array = _this select 1;
+
+    _array spawn {
+        if ((_this select 0 == "A") || (_this select 0 == "C" && !isDedicated)) then {
+            (_this select 1) call oppsideChatGroup;
+        };
+    };
+};
+
+oppsideChatGroupAll = {
+    if (isNil "_this") then { _this = []; };
+    oppsideChatGroupEventArgs = ["A", _this];
+    publicVariable "oppsideChatGroupEventArgs";
+    _this call oppsideChatGroup;
+    oppsideChatGroupEventArgs = [];
 };
 
 
