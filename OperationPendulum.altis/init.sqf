@@ -21,6 +21,9 @@ if(isServer) then {
 };
  // Load IED script 
  [] spawn {call compile preprocessFileLineNumbers "EPD\Ied_Init.sqf";};
+ 
+ // Load LoadOut saver
+  [] execVM "functions\keepLoadOut.sqf";
 
 
 //Constants

@@ -61,24 +61,10 @@ class Mission
 				items=10;
 				class Item0
 				{
-					position[]={14617.279,17.91,16765.938};
-					azimut=51.9058;
-					special="NONE";
-					id=0;
-					side="WEST";
-					vehicle="B_Soldier_F";
-					player="PLAY CDG";
-					skill=0.60000002;
-					text="Alpha2";
-					init="this setgroupID [""Alpha""];";
-					description="Alpha Squadmitglied";
-				};
-				class Item1
-				{
 					position[]={14624.181,17.91,16764.529};
 					azimut=-137.495;
 					special="NONE";
-					id=1;
+					id=0;
 					side="WEST";
 					vehicle="B_Soldier_F";
 					player="PLAYER COMMANDER";
@@ -88,6 +74,20 @@ class Mission
 					text="Alpha1";
 					init="this setgroupID [""Alpha""];";
 					description="Alpha Teamleiter";
+				};
+				class Item1
+				{
+					position[]={14617.279,17.91,16765.938};
+					azimut=51.9058;
+					special="NONE";
+					id=1;
+					side="WEST";
+					vehicle="B_Soldier_F";
+					player="PLAY CDG";
+					skill=0.60000002;
+					text="Alpha2";
+					init="this setgroupID [""Alpha""];";
+					description="Alpha Squadmitglied";
 				};
 				class Item2
 				{
@@ -217,7 +217,7 @@ class Mission
 			vehicle="B_supplyCrate_F";
 			skill=0.60000002;
 			text="ammobox";
-			init="this addAction[""<t color='#ff1111'>Virtual Ammobox</t>"", ""VAS\open.sqf""];";
+			init="this addAction[""<t color='#ff1111'>Virtual Ammobox</t>"", ""VAS\open.sqf""];  this enableSimulation false; this allowDamage false;";
 			description="Alpha Teamleiter";
 		};
 		class Item1
@@ -252,7 +252,7 @@ class Mission
 			vehicle="B_supplyCrate_F";
 			skill=0.60000002;
 			text="ammobox2";
-			init="this addAction[""<t color='#ff1111'>Virtual Ammobox</t>"", ""VAS\open.sqf""];";
+			init="this addAction[""<t color='#ff1111'>Virtual Ammobox</t>"", ""VAS\open.sqf""];  this enableSimulation false; this allowDamage false;";
 			description="Alpha Teamleiter";
 		};
 		class Item4
