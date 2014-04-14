@@ -2,7 +2,7 @@ call compile preprocessFileLineNumbers "functions\networkFunctionBG.sqf";
 call compile preprocessFileLineNumbers "functions\networkFunctions.sqf"; 
 
 
-configStartMoney = 250000000;
+configStartMoney = 250000;
 
 
 // Show Status link
@@ -16,7 +16,8 @@ if(isServer) then {
     lastTask = 0;
     padStatus =[0,0,0];
     spotStatus =[0,0];
-    publicVariable "money"; publicVariable "task"; publicVariable "lastTask",publicVariable "lastTask";
+    currentTaskText = "In Bereitschaft";
+    publicVariable "money"; publicVariable "task"; publicVariable "lastTask",publicVariable "lastTask";publicVariable "currentTaskText";
       
 };
  // Load IED script 

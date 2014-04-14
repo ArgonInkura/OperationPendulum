@@ -1,7 +1,10 @@
 // Pyrsos
 private["_enemyCount","_objectives"];
 
-_missionText = "Sprengen Sie alle!";
+_missionText = "Sprengen Sie alle gegnerischen Fahrzeuge bei Pyrsos!";
+currentTaskText = _missionText;
+publicVariable "currentTaskText";
+
 
 _markerLoc = [9276,19360];
 _markerShape = "ELLIPSE";
@@ -31,7 +34,8 @@ _car2 lock true;
 
 // Gegnerzahl bestimmen
 _enemyCount = {alive _x;} count _hostiles;
-[format["%2 Gegnerzahl: %1",_enemyCount,_missionText], player group] call oppsideChatGroupAll;
+_text = format["%2 Gegnerzahl: %1",_enemyCount,_missionText];
+[_text, group player] call oppsideChatGroupAll;
 
 _objectivesRemaining = {damage _x < 1 ;} count _objectives;
 
@@ -43,13 +47,15 @@ while {_objectivesRemaining > 0 } do{
     sleep 1;
 };
 
-["Mission erfolgreich. Dein Team erhält $25'000!", player group] call oppsideChatGroupAll;
+["Mission erfolgreich. Dein Team erhält $25'000!", group player] call oppsideChatGroupAll;
 money = money + 25000;
 publicVariable "money";
 task = 0;
 publicVariable "task";
 lastTask = "11";
 publicVariable "lastTask";
+currentTaskText = "In Bereitschaft";
+publicVariable "currentTaskText";
 
 sleep 300;
 

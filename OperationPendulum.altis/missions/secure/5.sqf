@@ -3,6 +3,8 @@ private["_enemyCount"];
 
 _missionLoc = "Sofia";
 _missionText = "Eliminieren Sie alle feindlichen Einheiten in Sofia!";
+currentTaskText = _missionText;
+publicVariable "currentTaskText";
 
 _markerLoc = [25670.6,21319.9];
 _markerShape = "ELLIPSE";
@@ -34,7 +36,8 @@ if(random 1 > 0.75) then {
 };
 
 _enemyCount = {alive _x;} count _hostiles;
-[format["%2 Gegnerzahl: %1",_enemyCount,_missionText], player group] call oppsideChatGroupAll;
+_text = format["%2 Gegnerzahl: %1",_enemyCount,_missionText];
+[_text, group player] call oppsideChatGroupAll;
 
 while {_enemyCount > 0 } do{
     player sideChat format["Gegner: %1",_enemyCount];
@@ -42,13 +45,15 @@ while {_enemyCount > 0 } do{
     sleep 1;
 };
 
-["Mission erfolgreich. Dein Team erhält $25'000!", player group] call oppsideChatGroupAll;
+["Mission erfolgreich. Dein Team erhält $25'000!", group player] call oppsideChatGroupAll;
 money = money + 25000;
 publicVariable "money";
 task = 0;
 publicVariable "task";
 lastTask = "05";
 publicVariable "lastTask";
+currentTaskText = "In Bereitschaft";
+publicVariable "currentTaskText";
 
 sleep 300;
 

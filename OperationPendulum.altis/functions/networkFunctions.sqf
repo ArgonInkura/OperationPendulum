@@ -14,7 +14,7 @@ oppsideChatGroup = {
     _text = _this select 0;
     _group = _this select 1;
 
-    if(group player == _group){
+    if(group player == _group)then {
         player sideChat _text;
-    }
+    };
 };
