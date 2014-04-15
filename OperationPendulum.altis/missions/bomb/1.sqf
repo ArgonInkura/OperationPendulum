@@ -98,6 +98,11 @@ deleteGroup _enemies4;
     deleteVehicle _x
 }foreach _hostiles;
 */
+
+{
+    deleteVehicle _x
+}foreach _vehicles;
+
 deleteMarker "Marker";
 
 
