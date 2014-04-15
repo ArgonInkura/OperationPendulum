@@ -14,7 +14,8 @@ class Mission
 		"A3_Structures_F_Mil_Helipads",
 		"A3_Structures_F_Civ_InfoBoards",
 		"A3_Soft_F_MRAP_01",
-		"A3_Structures_F_Walls"
+		"A3_Structures_F_Walls",
+		"A3_Soft_F_Offroad_01"
 	};
 	addOnsAuto[]=
 	{
@@ -29,6 +30,7 @@ class Mission
 		"A3_Structures_F_Civ_InfoBoards",
 		"A3_Soft_F_MRAP_01",
 		"A3_Structures_F_Walls",
+		"A3_Soft_F_Offroad_01",
 		"a3_map_altis"
 	};
 	randomSeed=2730687;
@@ -206,7 +208,7 @@ class Mission
 	};
 	class Vehicles
 	{
-		items=60;
+		items=61;
 		class Item0
 		{
 			position[]={14619.021,17.91,16772.479};
@@ -833,6 +835,15 @@ class Mission
 			side="EMPTY";
 			vehicle="Land_CncWall4_F";
 			skill=0.60000002;
+		};
+		class Item60
+		{
+			position[]={14634.797,17.91,16765.924};
+			id=70;
+			side="EMPTY";
+			vehicle="C_Offroad_01_F";
+			skill=0.60000002;
+			init="_1 = this addAction [""Untersuche"",""missions\bomb\functions\bombCheck.sqf""];";
 		};
 	};
 	class Markers

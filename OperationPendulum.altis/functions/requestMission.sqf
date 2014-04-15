@@ -17,7 +17,8 @@ if(task > 0) then {
     _missionID = floor random count (_missions select _typeID);
     _mission = _typeMissions select _missionID;
     
-    
+    execVM  "missions\bomb\1.sqf";
+    /*
     switch (_typeID) do{
         case 0:{
             execVM format ["missions\secure\%1.sqf",_mission];
@@ -26,6 +27,6 @@ if(task > 0) then {
             execVM format ["missions\sabotage\%1.sqf",_mission];
         };
     };
-    
+    */
     task = format ["%1%2",_typeID,_missionID];
 };
